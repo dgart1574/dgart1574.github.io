@@ -2,146 +2,38 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>POTD Archive</title>
-  <!-- LaTeX.css 기본 세팅 -->
-  <link rel="stylesheet" href="https://latex.vercel.app/style.css">
-  <!-- (선택 사항) 다크 모드 자동 전환 -->
-  <!-- body 태그에 "latex-dark-auto" 클래스 적용 -->
-  
-  <!-- MathJax: 수식 렌더링용 -->
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  
-  <!-- (선택 사항) Prism.js: 코드 하이라이팅 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-  
-  <style>
-    /* 추가적인 사용자 정의 스타일(원하는 경우) */
-    header, footer {
-      text-align: center;
-      margin: 2rem 0;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-    }
-    nav a {
-      text-decoration: none;
-      color: inherit;
-    }
-    main {
-      max-width: 800px;
-      margin: auto;
-    }
-    article {
-      margin-bottom: 3rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid #ccc;
-    }
-    .solution {
-      background-color: #090909;
-      padding: 1rem;
-      border-left: 4px solid #007acc;
-      margin-top: 1rem;
-    }
-    .equation {
-      overflow-x: auto;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>프로젝트 웹사이트</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="latex-dark-auto">
-  <!-- 헤더: 사이트 제목 및 네비게이션 -->
+<body>
   <header>
-    <h1>POTD Archive</h1>
+    <h1>내 프로젝트</h1>
     <nav>
       <ul>
-        <li><a href="#problem1">Day 1</a></li>
-        <li><a href="#problem2">Day 2</a></li>
-        <li><a href="#problem3">Day 3</a></li>
+        <li><a href="#">홈</a></li>
+        <li><a href="#">소개</a></li>
+        <li><a href="#">기능</a></li>
+        <li><a href="#">연락</a></li>
       </ul>
     </nav>
   </header>
-  
-  <!-- 메인 콘텐츠 영역 -->
+
   <main>
-    <!-- 문제 1: 원의 방정식 -->
-    <article id="problem1">
-      <h2>Day 1</h2>
-      <p>최고차항의 계수가 \( 1 \)인 이차함수 \( f(x) \)에 대하여 함수 \( g(t) \)를</p>
-      <div class="equation">
-        \[
-          g(t)=\lim_{x\to t+} \frac{x-t}{|f(x)-8|+|f(x)-f'(t)x|}
-        \]
-      </div>
-      <p>라 하자. 두 상수 \( a \), \( b \) \( (a<{}b) \) 에 대하여 \( g(a)g(b)\ne 0 \)일 때, \( g(a)g(b) \)의 값을 구하시오.</p>
-      <div class="solution">
-        <h3>해설</h3>
-        <p>
-          원의 기본 방정식은 중심과 반지름으로 표현되며, 위와 같이 나타냅니다. 예를 들어, 중심이 \( (2, 3) \)이고 반지름이 \( 4 \)인 경우,
-        </p>
-        <div class="equation">
-          \[
-            (x - 2)^2 + (y - 3)^2 = 16
-          \]
-        </div>
-      </div>
-    </article>
+    <section class="hero">
+      <h2>나의 멋진 프로젝트에 오신 걸 환영합니다!</h2>
+      <p>이 웹사이트는 프로젝트의 내용을 소개하고 기능을 보여주는 공간입니다.</p>
+      <a href="#" class="btn">더 알아보기</a>
+    </section>
     
-    <!-- 문제 2: 적분 문제 -->
-    <article id="problem2">
-      <h2>문제 2: 적분 계산</h2>
-      <p>\( x^2 \)의 \( 0 \)부터 \( 1 \)까지의 정적분 값을 구하시오.</p>
-      <div class="equation">
-        \[
-          \int_{0}^{1} x^2\,dx
-        \]
-      </div>
-      <div class="solution">
-        <h3>해설</h3>
-        <p>
-          적분값은 다음과 같이 계산됩니다:
-        </p>
-        <div class="equation">
-          \[
-            \int_{0}^{1} x^2\,dx = \left.\frac{x^3}{3}\right|_{0}^{1} = \frac{1}{3}
-          \]
-        </div>
-      </div>
-    </article>
-    
-    <!-- 문제 3: 행렬 곱셈 -->
-    <article id="problem3">
-      <h2>문제 3: 행렬 곱셈</h2>
-      <p>두 행렬 \( A \)와 \( B \)의 곱 \( AB \)를 구하시오.</p>
-      <div class="equation">
-        \[
-          A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}, \quad B = \begin{pmatrix} 5 & 6 \\ 7 & 8 \end{pmatrix}
-        \]
-      </div>
-      <div class="solution">
-        <h3>해설</h3>
-        <p>
-          행렬 곱셈의 결과는 아래와 같습니다:
-        </p>
-        <div class="equation">
-          \[
-            AB = \begin{pmatrix}
-              1\cdot5 + 2\cdot7 & 1\cdot6 + 2\cdot8 \\
-              3\cdot5 + 4\cdot7 & 3\cdot6 + 4\cdot8
-            \end{pmatrix} = \begin{pmatrix} 19 & 22 \\ 43 & 50 \end{pmatrix}
-          \]
-        </div>
-      </div>
-    </article>
+    <section class="about">
+      <h3>프로젝트 소개</h3>
+      <p>이곳에 프로젝트의 목적, 동기, 사용 기술 등을 간단히 소개합니다.</p>
+    </section>
   </main>
-  
-  <!-- 푸터: 사이트 정보 -->
+
   <footer>
-    <p>&copy; <script>document.write(new Date().getFullYear());</script> Cosmo556. All rights reserved.</p>
+    <p>&copy; 2025 내 프로젝트. 모든 권리 보유.</p>
   </footer>
 </body>
 </html>
